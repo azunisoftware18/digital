@@ -1,0 +1,114 @@
+@import "tailwindcss";
+
+@theme {
+  /* Override default Tailwind colors to match the OM Enterprises gold & navy logo theme */
+  --color-indigo-50: #fefaf0;
+  --color-indigo-100: #fcf4dd;
+  --color-indigo-500: #d4af37;
+  --color-indigo-600: #c5a059; /* OM Enterprises Brand Gold */
+  --color-indigo-700: #b38e47; /* Darker Gold */
+  --color-indigo-800: #967433;
+  --color-indigo-900: #0a1d72; /* OM Enterprises Brand Navy Blue */
+  
+  --color-emerald-500: #c5a059;
+  --color-emerald-600: #b38e47;
+}
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    --font-heading: 'Space Grotesk', system-ui, -apple-system, sans-serif;
+    
+    --color-bg-primary: #030712;
+    --color-bg-secondary: #0b0f19;
+    --color-bg-surface: #111827;
+    
+    --color-text-main: #f9fafb;
+    --color-text-muted: #9ca3af;
+    
+    --color-accent-primary: #c5a059;
+    --color-accent-secondary: #0a1d72;
+    --color-accent-emerald: #d4af37;
+  }
+
+  .light {
+    --color-bg-primary: #ffffff;
+    --color-bg-secondary: #f8fafc;
+    --color-bg-surface: #f1f5f9;
+    
+    --color-text-main: #0b1a30;
+    --color-text-muted: #4b5563;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    background-color: var(--color-bg-primary);
+    color: var(--color-text-main);
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+  }
+}
+
+@layer utilities {
+  .container-custom {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    max-width: 80rem; /* 1280px */
+  }
+
+  @media (min-width: 640px) {
+    .container-custom {
+      padding-left: 1.5rem;
+      padding-right: 1.5rem;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .container-custom {
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+
+  .text-gradient {
+    background: linear-gradient(135deg, #c5a059 0%, #d4af37 50%, #0a1d72 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  .glass-card {
+    background: rgba(11, 26, 48, 0.7);
+    backdrop-filter: blur(12px);
+    border: 1px solid rgba(197, 160, 89, 0.12);
+  }
+}
+
+/* Custom OM Enterprises Brand Toastify Progress Bar & Close Button Overrides */
+.Toastify__progress-bar--success {
+  background: linear-gradient(90deg, #c5a059 0%, #d4af37 100%) !important;
+}
+
+.Toastify__toast-theme--colored.Toastify__toast--success {
+  background: #0a1d72 !important;
+  color: #ffffff !important;
+}
+
+.Toastify__close-button {
+  color: #c5a059 !important;
+  opacity: 0.8 !important;
+}
+
+.Toastify__close-button:hover {
+  opacity: 1 !important;
+}
+
