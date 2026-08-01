@@ -535,7 +535,7 @@ export const About = () => {
       </section>
 
       {/* 7. Our Executive Team Member Section */}
-      <ExecutiveTeam />
+      {/* <ExecutiveTeam /> */}
     </PageTransition>
   );
 };

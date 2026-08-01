@@ -19,7 +19,7 @@ export const Home = () => {
         <HomeServices />
         <WhyChooseUs />
         <Statistics />
-        <ExecutiveTeam />
+        {/* <ExecutiveTeam /> */}
         <Process />
         <CaseStudies />
       </main>
