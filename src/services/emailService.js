@@ -10,7 +10,7 @@ export const sendContactEmail = async (formData) => {
   const serviceId = import.meta.env.VITE_EMAILJS_SERVICE_ID;
   const templateId = import.meta.env.VITE_EMAILJS_TEMPLATE_ID;
   const publicKey = import.meta.env.VITE_EMAILJS_PUBLIC_KEY;
-  const siteName = import.meta.env.VITE_SITE_NAME || 'OM Enterprises';
+  const siteName = import.meta.env.VITE_SITE_NAME || 'D Enterprises';
 
   // Format current date and time cleanly
   const submissionDate = new Date().toLocaleString('en-US', {

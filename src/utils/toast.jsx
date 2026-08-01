@@ -4,7 +4,7 @@ import { CheckCircle2, AlertCircle } from 'lucide-react';
 
 /**
  * Reusable Production Brand Toast Utility
- * Premium OM Enterprises Gold & Navy Theme
+ * Premium   Gold & Navy Theme
  */
 export const showSuccessToast = (message) => {
   toast.success(

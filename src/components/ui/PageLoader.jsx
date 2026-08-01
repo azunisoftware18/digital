@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import logoImg from '../../assets/images/logos/om-enterprises-logo.png';
+import logoImg from '../../assets/images/logos/digi-mitra-logo.png';
 
 export const PageLoader = () => {
   return (
@@ -27,7 +27,7 @@ export const PageLoader = () => {
           >
             <img
               src={logoImg}
-              alt="OM Enterprises Logo"
+              alt="Digi Mitra Enterprises Logo"
               className="h-14 sm:h-16 w-auto object-contain"
               onError={(e) => {
                 e.target.onerror = null;
@@ -45,7 +45,7 @@ export const PageLoader = () => {
             transition={{ delay: 0.15, duration: 0.3 }}
             className="text-sm sm:text-base font-extrabold uppercase tracking-widest text-[#c5a059]"
           >
-            OM ENTERPRISES
+            D ENTERPRISES
           </motion.h3>
 
           <motion.p

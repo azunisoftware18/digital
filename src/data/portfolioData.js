@@ -181,7 +181,7 @@ export const CLIENT_TESTIMONIALS = [
     role: 'Managing Director, Sharma Enterprises',
     rating: 5,
     quote:
-      'OM Enterprises delivered our corporate website ahead of schedule with exceptional UI design and performance. Their team maintained clear communication throughout the project and helped us establish a strong digital presence.',
+      'Digi Mitra Enterprises delivered our corporate website ahead of schedule with exceptional UI design and performance. Their team maintained clear communication throughout the project and helped us establish a strong digital presence.',
     image: reviewPerson1,
   },
   {
@@ -190,7 +190,7 @@ export const CLIENT_TESTIMONIALS = [
     role: 'Founder, Elite Fashion House',
     rating: 5,
     quote:
-      'Partnering with OM Enterprises for our e-commerce store and social media marketing has been a great experience. The website is mobile-responsive and fast, and their team is always prompt with updates.',
+      'Partnering with Digi Mitra Enterprises for our e-commerce store and social media marketing has been a great experience. The website is mobile-responsive and fast, and their team is always prompt with updates.',
     image: reviewPerson2,
   },
   {

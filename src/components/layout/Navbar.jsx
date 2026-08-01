@@ -1,18 +1,10 @@
 import { useState, useEffect } from 'react';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
-import {
-  ChevronDown,
-  Search,
-  Menu,
-  X,
-  ArrowRight,
-  PhoneCall,
-  Sparkles,
-} from 'lucide-react';
+import { ChevronDown, Search, Menu, X, ArrowRight, PhoneCall, Sparkles } from 'lucide-react';
 import { NAV_LINKS, ROUTES } from '../../constants/routes';
 import { useScroll } from '../../hooks/useScroll';
-import logoImg from '../../assets/images/logos/om-enterprises-logo.png';
+import logoImg from '../../assets/images/logos/digi-mitra-logo.png';
 
 // Comprehensive Searchable Index across Pages & Services
 const SEARCH_INDEX = [
@@ -73,7 +65,8 @@ const SEARCH_INDEX = [
   {
     title: 'Company Journey & Milestones',
     category: 'About Us',
-    description: 'Discover how OM Enterprises grew into a leading digital marketing agency.',
+    description:
+      'Discover how Digi Mitra Enterprises grew into a leading digital marketing agency.',
     path: ROUTES.ABOUT,
   },
   {
@@ -172,7 +165,7 @@ export const Navbar = () => {
           >
             <img
               src={logoImg}
-              alt="OM Enterprises Logo"
+              alt="Digi Mitra Enterprises Logo"
               className="h-16 sm:h-18 lg:h-20 w-auto max-w-[220px] sm:max-w-[200px] object-contain transition-transform duration-300 group-hover:scale-105"
               onError={(e) => {
                 e.target.onerror = null;
@@ -207,7 +200,9 @@ export const Navbar = () => {
                     {hasDropdown && (
                       <ChevronDown
                         className={`w-4 h-4 transition-transform duration-200 ${
-                          activeDropdown === link.label ? 'rotate-180 text-indigo-600' : 'text-slate-400'
+                          activeDropdown === link.label
+                            ? 'rotate-180 text-indigo-600'
+                            : 'text-slate-400'
                         }`}
                       />
                     )}
@@ -444,7 +439,8 @@ export const Navbar = () => {
                   ) : (
                     <div className="text-center py-8 space-y-3">
                       <p className="text-slate-500 text-sm font-medium">
-                        No results found for "<span className="text-slate-900 font-bold">{searchQuery}</span>"
+                        No results found for "
+                        <span className="text-slate-900 font-bold">{searchQuery}</span>"
                       </p>
                       <button
                         type="button"
@@ -458,7 +454,6 @@ export const Navbar = () => {
                   )}
                 </div>
               )}
-
             </motion.div>
           </motion.div>
         )}

@@ -249,7 +249,7 @@ const PROJECT_TESTIMONIALS = [
     role: 'Owner, Luxe Salon & Spa',
     project: 'Salon Website & Local SEO',
     quote:
-      'OM Enterprises built a stunning website for our salon that allows clients to book appointments online effortlessly. Our local visibility in Jaipur has increased significantly!',
+      'Digi Mitra Enterprises built a stunning website for our salon that allows clients to book appointments online effortlessly. Our local visibility in Jaipur has increased significantly!',
   },
   {
     id: 2,
@@ -299,7 +299,9 @@ export const Portfolio = () => {
 
           {/* Description */}
           <p className="text-white/95 text-xs sm:text-sm leading-relaxed font-normal max-w-2xl mx-auto">
-            Explore a collection of successful digital marketing campaigns, websites, SEO strategies, branding projects, and business solutions delivered for clients across multiple industries.
+            Explore a collection of successful digital marketing campaigns, websites, SEO
+            strategies, branding projects, and business solutions delivered for clients across
+            multiple industries.
           </p>
 
           {/* CTA Button */}
@@ -348,7 +350,10 @@ export const Portfolio = () => {
           </div>
 
           {/* Project Cards Grid */}
-          <motion.div layout className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]">
+          <motion.div
+            layout
+            className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 min-h-[400px]"
+          >
             <AnimatePresence mode="popLayout">
               {filteredProjects.map((project) => (
                 <motion.div
@@ -442,7 +447,8 @@ export const Portfolio = () => {
               In-Depth Client Case Studies
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-              How we solve complex digital challenges for businesses across India using structured strategy, design, and performance execution.
+              How we solve complex digital challenges for businesses across India using structured
+              strategy, design, and performance execution.
             </p>
           </div>
 
@@ -458,7 +464,9 @@ export const Portfolio = () => {
                 className="bg-white rounded-2xl border border-slate-200 shadow-xl overflow-hidden grid grid-cols-1 lg:grid-cols-12 gap-0"
               >
                 {/* Image Area */}
-                <div className={`lg:col-span-5 relative min-h-[300px] bg-slate-900 ${index % 2 === 1 ? 'lg:order-last' : ''}`}>
+                <div
+                  className={`lg:col-span-5 relative min-h-[300px] bg-slate-900 ${index % 2 === 1 ? 'lg:order-last' : ''}`}
+                >
                   <img
                     src={study.image}
                     alt={study.title}
@@ -540,7 +548,8 @@ export const Portfolio = () => {
               Professional Project Capabilities
             </h2>
             <p className="text-slate-300 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-              Every project delivered by OM Enterprises satisfies strict technical, architectural, and visual quality benchmarks.
+              Every project delivered by D Enterprises satisfies strict technical, architectural,
+              and visual quality benchmarks.
             </p>
           </div>
 
@@ -573,7 +582,8 @@ export const Portfolio = () => {
               Industries We Serve Across India
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm max-w-xl mx-auto leading-relaxed">
-              Tailored digital marketing strategies and web solutions engineered for diverse market sectors.
+              Tailored digital marketing strategies and web solutions engineered for diverse market
+              sectors.
             </p>
           </div>
 
@@ -626,7 +636,8 @@ export const Portfolio = () => {
               </h2>
 
               <p className="text-white/90 text-xs sm:text-sm leading-relaxed font-normal max-w-md">
-                Have a project idea or need expert digital marketing solutions? Connect with OM Enterprises today for a free project consultation.
+                Have a project idea or need expert digital marketing solutions? Connect with Digi
+                Mitra Enterprises today for a free project consultation.
               </p>
             </motion.div>
 
@@ -688,9 +699,7 @@ export const Portfolio = () => {
                 <span className="text-xs font-bold text-[#c5a059] uppercase block">
                   {selectedCaseStudy.industry}
                 </span>
-                <h3 className="text-xl font-extrabold text-slate-900">
-                  {selectedCaseStudy.name}
-                </h3>
+                <h3 className="text-xl font-extrabold text-slate-900">{selectedCaseStudy.name}</h3>
               </div>
               <button
                 onClick={() => setSelectedCaseStudy(null)}
@@ -700,9 +709,7 @@ export const Portfolio = () => {
               </button>
             </div>
 
-            <p className="text-slate-600 text-sm leading-relaxed">
-              {selectedCaseStudy.summary}
-            </p>
+            <p className="text-slate-600 text-sm leading-relaxed">{selectedCaseStudy.summary}</p>
 
             <div className="space-y-3 pt-2 border-t border-slate-100">
               <h4 className="text-xs font-extrabold text-slate-900 uppercase">

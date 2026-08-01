@@ -12,7 +12,7 @@ import {
   ChevronRight,
 } from 'lucide-react';
 import { NAV_LINKS, ROUTES } from '../../constants/routes';
-import logoImg from '../../assets/images/logos/om-enterprises-logo.png';
+import logoImg from '../../assets/images/logos/digi-mitra-logo.png';
 
 // Social Media Data Array
 const SOCIAL_LINKS = [
@@ -106,7 +106,7 @@ export const Footer = () => {
             >
               <img
                 src={logoImg}
-                alt="OM Enterprises Logo"
+                alt="Digi Mitra Enterprises Logo"
                 className="h-14 sm:h-16 w-auto object-contain"
                 onError={(e) => {
                   e.target.onerror = null;
@@ -235,7 +235,7 @@ export const Footer = () => {
         {/* BOTTOM BAR: Copyright & Attribution */}
         <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500">
           <p className="text-center sm:text-left">
-            © {new Date().getFullYear()} OM Enterprises. All Rights Reserved.
+            © {new Date().getFullYear()} Digi Mitra Enterprises. All Rights Reserved.
           </p>
 
           <p className="text-center sm:text-right">
@@ -245,7 +245,7 @@ export const Footer = () => {
               onClick={scrollToTop}
               className="font-semibold text-slate-300 hover:text-[#c5a059] transition-colors cursor-pointer"
             >
-              OM Enterprises
+              Digi Mitra Enterprises
             </Link>
           </p>
         </div>

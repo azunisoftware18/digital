@@ -65,14 +65,12 @@ export const Contact = () => {
     }
   };
 
-  const officeAddress =
-    '26°52\'37.7"N 75°45\'38.5"E';
+  const officeAddress = '26°52\'37.7"N 75°45\'38.5"E';
 
   const mapQueryUrl =
     'https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3558.8299227239195!2d75.75811377543823!3d26.877144176668395!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjbCsDUyJzM3LjciTiA3NcKwNDUnMzguNSJF!5e0!3m2!1sen!2sin!4v1785229323767!5m2!1sen!2sin';
 
-  const mapDirectUrl =
-    'https://maps.app.goo.gl/gdzpXCkhzG7fNoc69';
+  const mapDirectUrl = 'https://maps.app.goo.gl/gdzpXCkhzG7fNoc69';
 
   return (
     <PageTransition>
@@ -89,7 +87,6 @@ export const Contact = () => {
       <section className="bg-white py-16 sm:py-24">
         <div className="container-custom">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 text-center max-w-6xl mx-auto">
-
             {/* Phone */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
@@ -108,9 +105,7 @@ export const Contact = () => {
                   }}
                 />
               </div>
-              <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-                Phone
-              </h2>
+              <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Phone</h2>
               <p className="text-slate-600 text-sm leading-relaxed max-w-xs">
                 Please call us and we will be happy to assist you. We work with you, not for you.
               </p>
@@ -148,11 +143,10 @@ export const Contact = () => {
                   }}
                 />
               </div>
-              <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-                Email
-              </h2>
+              <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Email</h2>
               <p className="text-slate-600 text-sm leading-relaxed max-w-xs">
-                Please email contact form and we will be happy to assist you. We work with you, not for you.
+                Please email contact form and we will be happy to assist you. We work with you, not
+                for you.
               </p>
               <a
                 href="mailto:omenterprises.jaipurdigital@gmail.com"
@@ -180,9 +174,7 @@ export const Contact = () => {
                   }}
                 />
               </div>
-              <h2 className="text-2xl font-bold text-slate-900 tracking-tight">
-                Location
-              </h2>
+              <h2 className="text-2xl font-bold text-slate-900 tracking-tight">Location</h2>
               <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-xs font-medium">
                 {officeAddress}
               </p>
@@ -196,7 +188,6 @@ export const Contact = () => {
                 <ArrowRight className="w-4 h-4 transition-transform group-hover:translate-x-1" />
               </a>
             </motion.div>
-
           </div>
         </div>
       </section>
@@ -219,7 +210,8 @@ export const Contact = () => {
               Schedule Meeting
             </h2>
             <p className="text-slate-600 text-xs sm:text-sm leading-relaxed max-w-lg mx-auto">
-              So kind brought can&apos;t wherein i man fly fruit it beginning meat one a gathered our day moving have beginning him.
+              So kind brought can&apos;t wherein i man fly fruit it beginning meat one a gathered
+              our day moving have beginning him.
             </p>
           </div>
 
@@ -282,11 +274,14 @@ export const Contact = () => {
                 <button
                   type="submit"
                   disabled={submitting}
-                  className={`bg-[#c5a059] hover:bg-[#b38e47] text-white font-extrabold text-xs uppercase tracking-wider px-8 py-4 transition-all duration-200 focus:outline-none inline-flex items-center justify-center gap-2.5 group shadow-md hover:shadow-lg rounded-sm ${submitting ? 'opacity-65 cursor-not-allowed' : 'cursor-pointer'
-                    }`}
+                  className={`bg-[#c5a059] hover:bg-[#b38e47] text-white font-extrabold text-xs uppercase tracking-wider px-8 py-4 transition-all duration-200 focus:outline-none inline-flex items-center justify-center gap-2.5 group shadow-md hover:shadow-lg rounded-sm ${
+                    submitting ? 'opacity-65 cursor-not-allowed' : 'cursor-pointer'
+                  }`}
                 >
                   <span>{submitting ? 'SENDING...' : 'SEND YOUR MESSAGE'}</span>
-                  <Send className={`w-4 h-4 transition-transform duration-200 ${submitting ? 'animate-pulse' : 'group-hover:translate-x-1'}`} />
+                  <Send
+                    className={`w-4 h-4 transition-transform duration-200 ${submitting ? 'animate-pulse' : 'group-hover:translate-x-1'}`}
+                  />
                 </button>
               </div>
             </form>
@@ -299,7 +294,7 @@ export const Contact = () => {
         <div className="container-custom">
           <div className="rounded-2xl overflow-hidden shadow-xl border border-slate-200 aspect-[16/9] sm:aspect-[21/9] bg-slate-100 relative">
             <iframe
-              title="OM Enterprises Office Location Map"
+              title="Digi Mitra Enterprises Office Location Map"
               src={mapQueryUrl}
               className="w-full h-full border-0"
               allowFullScreen=""
