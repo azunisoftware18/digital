@@ -7,6 +7,7 @@ import { showSuccessToast, showErrorToast } from '../utils/toast';
 import phoneIcon from '../assets/images/icons/phone-icon.png';
 import emailIcon from '../assets/images/icons/email-icon.png';
 import locationIcon from '../assets/images/icons/location-icon.png';
+import axios from 'axios';
 
 export const Contact = () => {
   const [formData, setFormData] = useState({
@@ -45,8 +46,29 @@ export const Contact = () => {
     setSubmitting(true);
 
     try {
-      const result = await sendContactEmail(formData);
-      if (result.success) {
+      // const result = await sendContactEmail(formData);
+      const data = new FormData();
+      data.append('name', formData.name);
+      data.append('email', formData.email);
+      data.append('phone', formData.phone);
+      data.append('message', formData.message);
+      data.append('subject', formData.subject);
+
+      const result = await fetch(
+        'https://script.google.com/macros/s/AKfycbxco9ZqcNhoIWQ23md7gwqVVRaj9YD9ls1e3QB4qvdiPX9-vvDQuC2QAygpWX3wcOUQYg/exec',
+        {
+          method: 'POST',
+          body: data,
+          header: {
+            'Content-Type': 'multipart/form-data',
+          },
+        }
+      );
+
+      const res = await result.json();
+      // console.log(res);
+
+      if (res.status === 'success') {
         showSuccessToast('Thank you! Your quote request has been submitted successfully.');
         setFormData({
           name: '',
@@ -58,8 +80,6 @@ export const Contact = () => {
       } else {
         showErrorToast(result.message || 'Something went wrong. Please try again.');
       }
-    } catch (err) {
-      showErrorToast('Something went wrong. Please try again.');
     } finally {
       setSubmitting(false);
     }
